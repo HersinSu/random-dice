@@ -1,0 +1,85 @@
+#骰子函数
+import random
+
+#第一种试验方法
+def d4(times:'次数'):
+    times = int(times)
+    start = 1
+    result_list = []
+    while start <= times:
+        result = random.randint(1,4)
+        result_list.append(result)
+        start += 1
+    return result_list
+    
+        
+#第二种方案,不符合预期
+#def d6(times:'次数'):
+#   d6_list = [1,2,3,4,5,6]
+#   result = random.sample(d6_list,times)
+#  print(result)
+   
+
+
+#第三种方案,还不会用
+#def d6(times:'次数'):
+#   [random.randint(0,100) for i in range(10)]
+    
+def d6(times:'次数'):
+    times = int(times)
+    start = 1
+    result_list = []
+    while start <= times:
+        result = random.randint(1,6)
+        result_list.append(result)
+        start += 1
+    return result_list   
+
+
+
+def d8(times:'次数'):
+    times = int(times)
+    start = 1
+    result_list = []
+    while start <= times:
+        result = random.randint(1,8)
+        result_list.append(result)
+        start += 1
+    return result_list
+
+
+
+def d10(times:'次数'):
+    times = int(times)
+    start = 1
+    result_list = []
+    while start <= times:
+        result = random.randint(1,10)
+        result_list.append(result)
+        start += 1
+    return result_list   
+
+
+
+def d12(times:'次数'):
+    times = int(times)
+    start = 1
+    result_list = []
+    while start <= times:
+        result = random.randint(1,12)
+        result_list.append(result)
+        start += 1
+    return result_list   
+
+
+
+def d20(times:'次数'):
+    times = int(times)
+    start = 1
+    result_list = []
+    while start <= times:
+        result = random.randint(1,20)
+        result_list.append(result)
+        start += 1
+    return result_list   
+
