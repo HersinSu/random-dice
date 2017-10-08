@@ -1,3 +1,5 @@
+```python
+
 #骰子函数
 import random
 
@@ -83,3 +85,4 @@ def d20(times:'次数'):
         start += 1
     return result_list   
 
+```
